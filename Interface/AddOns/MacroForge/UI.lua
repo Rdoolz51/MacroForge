@@ -176,8 +176,8 @@ function MF:Refresh()
         self.coverage:SetText("Premade macros for your class + shared utility. Select one to review its body, prerequisites and source. Generate is always explicit.")
     else
         for _,s in ipairs(self.catalog) do
-            if string.find(string.lower(s.name.." "..s.rank),query,1,true) and (self.filter==nil or self.filter=="all" or self.filter=="learned" and s.known or self.filter=="unlearned" and not s.known) then
-                entries[#entries+1]={title=s.name,subtitle=(s.rank~="" and s.rank or "Rank-free")..(s.known and " — Learned" or " — Unlearned")..(s.passive and " — Passive" or ""),icon=s.icon,spell=s}
+            if not s.passive and string.find(string.lower(s.name.." "..s.rank),query,1,true) and (self.filter==nil or self.filter=="all" or self.filter=="learned" and s.known or self.filter=="unlearned" and not s.known) then
+                entries[#entries+1]={title=s.name,subtitle=(s.rank~="" and s.rank or "Rank-free")..(s.known and " — Learned" or " — Unlearned"),icon=s.icon,spell=s}
             end
         end
         self.coverage:SetText(self.discovery or "Open outside combat to discover spells.")

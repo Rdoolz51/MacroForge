@@ -1,4 +1,4 @@
-# MacroForge 0.7.0
+# MacroForge 0.7.1
 
 WoW Forever macro workshop and interactive simulator. Target verified from the
 user's screenshot and local executable: 1.60.1 build 70862, interface 16001.
@@ -6,7 +6,7 @@ user's screenshot and local executable: 1.60.1 build 70862, interface 16001.
 ## Install
 
 Exit WoW. Copy `Interface/AddOns/MacroForge` from this project or
-`MacroForge-0.7.0.zip` into:
+`MacroForge-0.7.1.zip` into:
 
 `C:\Program Files (x86)\World of Warcraft\_forever_\Interface\AddOns`
 
@@ -260,6 +260,16 @@ No reports are submitted automatically. The URL is configured in Feedback.lua.
 This repository contains only the installable addon source and documentation.
 Local simulator files, test/development tooling, dependencies and generated ZIPs
 are excluded. Tests and simulations remain stopped at the user's request.
+
+### Active abilities only (0.7.1)
+
+Passive abilities are excluded from the spellbook catalog and rank families;
+combo spell selectors continue to exclude passives as well. Discovery uses the
+modern spellbook passive API/item flag, then spell-ID passive data, preserving
+known passive status across repeated discovery sources and cached entries. Legacy
+spellbooks check passive status by book slot rather than passing a spell ID as
+a slot. Learned and unlearned active abilities remain searchable. Existing saved
+macros are preserved. No tests or simulations were run for this update.
 
 ### Spellbook-style lists and character macro window (0.6.3)
 

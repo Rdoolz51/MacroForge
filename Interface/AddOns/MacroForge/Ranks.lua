@@ -1,7 +1,7 @@
 local _,MF=...
 function MF:Family(spell)
     local ranks={}
-    for _,item in ipairs(self.catalog) do if item.name==spell.name then ranks[#ranks+1]=item end end
+    for _,item in ipairs(self.catalog) do if item.name==spell.name and not item.passive then ranks[#ranks+1]=item end end
     return ranks
 end
 function MF:CastName(spell,mode,rankID,draft)

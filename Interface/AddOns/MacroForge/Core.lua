@@ -1,5 +1,5 @@
 local addonName, MF = ...
-MF.version = "0.7.0"
+MF.version = "0.7.1"
 MF.catalog = {}
 function MF:MacroInitials(name)
     local _,_,_,limit=self:Limits()
