@@ -1,0 +1,22 @@
+## Interface: 16001
+## Title: MacroForge
+## Notes: Class spellbook, rank previews and safe macro creation for WoW Forever.
+## Version: 0.7.0
+## SavedVariables: MacroForgeDB
+
+Core.lua
+Compat.lua
+Spells.lua
+Ranks.lua
+Combo.lua
+FormConditions.lua
+Requirements.lua
+Premades.lua
+Dropdown.lua
+Templates.lua
+Macros.lua
+Reload.lua
+Shortcut.lua
+Minimap.lua
+Feedback.lua
+UI.lua

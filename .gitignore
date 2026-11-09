@@ -1,0 +1,7 @@
+tools/deps/
+tools/tmp/
+tools/browsers/
+__pycache__/
+/sim/
+/tools/
+/*.zip
