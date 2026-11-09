@@ -349,7 +349,3 @@ ownership and close/reload behavior; checks JavaScript errors and overflow at
 Development dependencies are local to `tools/deps`; the addon requires no
 third-party libraries. Re-run with `python tools/verify.py` and
 `python tools/test_sim.py`. The latter uses browsers in `tools/browsers`.
-
-**In-game acceptance is still pending.** Read `docs/API-NOTES.md` for sources,
-fallbacks and known gaps. Complete discovery of every class spell/rank cannot
-be asserted without a validated Forever catalog or proof the APIs expose it all.
